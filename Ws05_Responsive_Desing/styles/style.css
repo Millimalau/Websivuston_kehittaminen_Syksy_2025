@@ -2,6 +2,21 @@ body {
   background-color: rgb(228, 215, 207);
 }
 
+.responsive-nav .nav-list {
+      display: flex;
+      list-style: none;
+    }
+    
+    @media (max-width: 600px) {
+      .responsive-nav .nav-list {
+        display: none;
+      }
+    
+      .responsive-nav .menu-toggle {
+        display: block;
+      }
+    }
+
 .filter-image {
   filter: grayscale(100%);
   transition: filter 0.3s ease;
@@ -64,6 +79,24 @@ h1 {
   background-color: rgb(236, 11, 11);
 }
 
+.responsive-container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    
+    .column {
+      flex: 1;
+      padding: 10px;
+    }
+    
+    @media (max-width: 600px) {
+      .column {
+        flex: 100%;
+      }
+    }
+
+
+
 .animation-box {
   width: 50px;
   height: 50px;
@@ -80,6 +113,11 @@ h1 {
     left: 100px;
   }
 }
+
+.responsive-image {
+      max-width: 100%;
+      height: auto;
+    }
 
 .pseudo-list li:nth-child(odd) {
   background-color: lightgray;
@@ -142,6 +180,23 @@ td {
     background-color: lightseagreen;
   }
 }
+
+.media-query-box {
+      padding: 20px;
+      text-align: center;
+    }
+    
+    @media (max-width: 600px) {
+      .media-query-box {
+        background-color: lightcoral;
+      }
+    }
+    
+    @media (min-width: 601px) {
+      .media-query-box {
+        background-color: lightblue;
+      }
+    }
 
 .box {
   background-color: rgb(73, 173, 231);
