@@ -1,11 +1,214 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ws06_Introduction_to_bootstrap</title>
-</head>
-<body>
-    <h1>Ws06_Introduction_to_bootstrap</h1>
-</body>
+<html>
+  <head>
+    <title>Milli Haverinen</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://getbootstrap.com/docs/5.3/components/card/">Bootstrap</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="alert alert-warning" role="alert">
+      Nettisivuille huoltokatko!
+    </div>
+
+<div class="alert alert-succes" role="alert">
+      Alert success!
+    </div>
+
+<div class="alert alert-danger" role="alert">
+      This is a warning alert—danger
+    </div>
+
+<div class="alert alert-info" role="alert">
+      This is a warning alert—info
+    </div>
+<div class="alert alert-primary" role="alert">
+      This is a warning alert—primary
+    </div>
+<div class="alert alert-dark" role="alert">
+      This is a warning alert—dark
+    </div>
+
+
+    <h1 style="color: rgb(2, 65, 51)">Kotisivut Milli</h1>
+
+        <div class="animation-box">Moi</div>
+
+<div class="container">
+      <div class="row">
+        <div class="col-md-4 col-12">Column 1</div>
+        <div class="col-md-4 col-12">Column 2</div>
+        <div class="col-md-4 col-12">Column 3</div>
+      </div>
+    </div>
+
+<button class="btn btn-primary">primary</button>
+
+<button class="btn btn-secondary">secondary</button>
+<button class="btn btn-success">success</button>
+<button class="btn btn-danger">danger</button>
+
+
+
+
+
+<nav class="responsive-nav">
+      <button class="menu-toggle">☰ Menu</button>
+      <ul class="nav-list">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+<div>
+    <img src="./images/Oma_selfie.jpg" alt="oma_kuva" class="filter-image"/>
+    <p>Opiskelen Laureassa tietojenkäsittelyä</p>
+    </div>
+
+    
+    <blockquote class="quote">
+        N'OUBLIE PAS DE VIVRE.
+      </blockquote>
+
+         <button class="transition-button">Vaihda väriä</button>
+
+ <div class="responsive-container">
+      <div class="column">Column 1</div>
+      <div class="column">Column 2</div>
+    </div>        
+
+    <h2>Vapaa-aikani</h2>
+
+
+    <ol>
+      <li>Ulkoilen koiran kanssa</li>
+      <li>Katselen telkkaria</li>
+      <li>Käyn metsässä ja sienestän</li>
+    </ol>
+
+    <img src="./images/revontulet.jpg" alt="revontulet" class="responsive-image">
+
+    <h2>Lapsen kanssa leikin</h2>
+
+    <ul class="pseudo-list">
+      <li>Legoilla</li>
+      <li>Piilosta</li>
+      <li>Autoilla</li>
+    </ul>
+
+    <div class="flex-container">
+    <div class="box">🙊</div>
+    <div class="box">🙈</div>
+    <div class="box">🙉</div>
+  </div>
+
+  <div class="grid-container">
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+  </div>
+
+  <div class="responsive-box"></div>
+  <div class="media-query-box">Resize the window to see the effect</div>
+
+
+    <table>
+      <tr>
+        <th>Suoritetut</th>
+        <th>Menossa</th>
+      </tr>
+      <tr>
+        <td>Digitaalisten palvelujen kehittäminen, 5 osp</td>
+        <td>Websivuston kehittäminen, 5 osp</td>
+      </tr>
+      <tr>
+        <td>Ict infrastruktuuri ja pilvipalvelut, 5 osp</td>
+        <td>Professional communication in English, 5 osp</td>
+      </tr>
+    </table>
+
+<div class="card" style="width: 18rem;">
+      <img src="images/revontulet.jpg" class="card-img-top" alt="Revontulia">
+      <div class="card-body">
+        <h5 class="card-title">Revontulia Lapissa</h5>
+        <p class="card-text">Miksi Tämä teksiti tulee tähän Näin.</p>
+        <a href="#" class="btn btn-primary">primary</a>
+      </div>
+      <ul class="list-group list-group-flush">
+    <li class="list-group-item">An item</li>
+    <li class="list-group-item">A second item</li>
+    <li class="list-group-item">A third item</li>
+  </ul>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+      <img src="images/Oma_selfie.jpg" class="card-img-top" alt="Oma_selfie">
+      <div class="card-body">
+        <h5 class="card-title">Card Title</h5>
+        <p class="card-text">This is a simple card example using Bootstrap.</p>
+        <a href="#" class="btn btn-success">success</a>
+      </div>
+    </div>
+
+    <br />
+    <a href="https://www.google.com/?client=safari&channel=iphone_bm"
+      >visit Google</a
+    >
+<header>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <section id="about">
+      <h2></h2>
+      <p></p>
+    </section>
+  </main>
+  
+  <footer>
+    <p></p>
+  </footer>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" /><br /><br />
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" /><br /><br />
+      <input type="submit" value="Submit" />
+    </form>
+    <!-- Bootstrap JavaScript (place before closing </body> tag) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>

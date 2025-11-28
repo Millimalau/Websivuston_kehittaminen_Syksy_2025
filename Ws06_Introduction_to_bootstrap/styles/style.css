@@ -1,0 +1,235 @@
+body {
+  background-color: rgb(228, 130, 69);
+}
+
+.responsive-nav .nav-list {
+      display: flex;
+      list-style: none;
+    }
+    
+    @media (max-width: 600px) {
+      .responsive-nav .nav-list {
+        display: none;
+      }
+    
+      .responsive-nav .menu-toggle {
+        display: block;
+      }
+    }
+
+.filter-image {
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+
+.filter-image:hover {
+  filter: grayscale(0%);
+}
+
+img {
+  width: 180px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+img {
+  max-width: 150px;
+  height: auto;
+}
+p {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  top: -40px;
+  left: 80px;
+  font-size: 2em;
+}
+
+.quote {
+  position: relative;
+  padding-left: 20px;
+  font-style: italic;
+}
+
+.quote::before {
+  content: "“";
+
+  font-size: 25px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: rgb(223, 18, 18);
+}
+
+h1 {
+  font-size: 8em;
+  text-align: center;
+}
+
+.transition-button {
+  background-color: rgb(184, 38, 159);
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.transition-button:hover {
+  background-color: rgb(236, 11, 11);
+}
+
+.responsive-container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    
+    .column {
+      flex: 1;
+      padding: 10px;
+    }
+    
+    @media (max-width: 600px) {
+      .column {
+        flex: 100%;
+      }
+    }
+
+
+
+.animation-box {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(209, 13, 167);
+  position: relative;
+  animation: move 5s infinite alternate;
+}
+
+@keyframes move {
+  from {
+    left: 0;
+  }
+  to {
+    left: 100px;
+  }
+}
+
+.responsive-image {
+      max-width: 100%;
+      height: auto;
+    }
+
+.pseudo-list li:nth-child(odd) {
+  background-color: lightgray;
+}
+
+.pseudo-list li:nth-child(even) {
+  background-color: white;
+}
+
+div {
+  padding: 20px;
+  margin: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th {
+  background-color: #f2f2f2;
+}
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+.grid-item {
+  background-color: lightgreen;
+  padding: 20px;
+  text-align: center;
+}
+
+.responsive-box {
+  padding: 20px;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .responsive-box {
+    background-color: rgb(248, 15, 15);
+  }
+}
+
+@media (min-width: 601px) {
+  .responsive-box {
+    background-color: lightseagreen;
+  }
+}
+
+.media-query-box {
+      padding: 20px;
+      text-align: center;
+    }
+    
+    @media (max-width: 600px) {
+      .media-query-box {
+        background-color: lightcoral;
+      }
+    }
+    
+    @media (min-width: 601px) {
+      .media-query-box {
+        background-color: lightblue;
+      }
+    }
+
+.box {
+  background-color: rgb(73, 173, 231);
+  padding: 30px;
+  text-align: center;
+}
+
+form {
+  display:inline-block;
+  flex-direction: column;
+  gap: 10px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"] {
+  padding: 6px;
+  border: 1px solid #ce1717;
+  border-radius: 4px;
+}
+
+input[type="submit"] {
+  background-color: #ffe600;
+  color: rgb(7, 7, 7);
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
